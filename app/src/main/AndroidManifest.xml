@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eleven.newstaff">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".basic.MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".functions.ui.customerview.CusomterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.customerview.CustomerViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.customerview.CustomListViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.DispatchEventDemoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.SlideMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.SwipeMenuDemoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.PhotoWallDemoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.activitydemo.ActivityDemoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".functions.ui.activitydemo.ActivityBActivity" android:screenOrientation="portrait"
+            android:taskAffinity="com.eleven1.test"
+            android:launchMode="singleTask"/>
+        <activity android:name=".functions.ui.activitydemo.ActivityCActivity" android:screenOrientation="portrait"
+            android:taskAffinity="com.eleven1.test"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".functions.ui.viewdemo.ViewDemoActivity" android:screenOrientation="portrait"/>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
